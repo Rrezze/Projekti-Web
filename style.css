@@ -1,0 +1,433 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.brown-div{
+	background-image: url(main.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 625px;
+}
+.header-div{
+	display: flex;
+	height: 80;
+}
+.logo-div{
+	position: absolute;
+	left: 2%;
+}
+.nav-list{
+	position: absolute;
+	left: 77%;
+	top: 5%;
+}
+ul{
+	display: flex;
+	list-style-type: none;
+}
+ul li{
+	margin-left: 20px;
+	height: 20px;
+	font-size:17px;
+	font-family: 'Lemon Tuesday', sans-serif;
+}
+li a:hover {
+  background-color: white;
+}
+a:link{
+	text-decoration: none;
+	color: rgb(205, 179, 146);
+}
+a:visited {
+  color: rgb(205, 179, 146);
+  background-color: transparent;
+  text-decoration: none;
+}
+.txt1{
+	font-family: 'Lemon Tuesday', sans-serif;
+	font-size: 60px;
+	padding-top: 200px;
+	margin-left: 60px;
+}
+.content-div{
+	display: flex;
+	margin-left: 150px;
+}
+.foto1{
+	margin-left: 100px;
+	margin-top: 209px;
+}
+.btn1{
+	background-color: rgb(155, 30, 45);
+	color: white;
+	height: 35px;
+	width: 139px;
+	margin-top: 50px;
+	font-family: 'Lemon Tuesday', sans-serif;
+	border-radius: 10%;
+	border-color: rgb(155, 30, 45);
+	margin-left: 170px;
+}
+.secondsector-div{
+	background-color: #3C2519;
+	height: 850px;
+}
+.txt2{
+	font-family: 'Lemon Tuesday', sans-serif;
+	text-align: center;
+	padding-top: 90px;
+	font-size: 40pt;
+}
+.team-div{
+	margin-top: 10%;
+	margin-left:5%;
+    width: 90%;
+    height: 200px;
+    text-align: center;
+    font-size: 24pt;
+    font-family: 'Lemon Tuesday', sans-serif;
+}
+
+.teams1-brand{
+    width: 29%;
+    height: 445px;
+    margin: 8px 10px;
+    display: inline-block;
+     background-color: transparent;
+     box-shadow: 5px 5px 10px;
+}
+.teams1-brand img{
+	margin-top: 10px;
+	width:330px ;
+	height: 340px;
+
+}
+.light-brown-div{
+	background-color: #B29172;
+	height: 750px;
+}
+.inner-div{
+	display: flex;
+	margin-left: 120px;
+	padding-left: 30px;
+}
+.pic-div{
+	margin-top: 240px;
+}
+.txt3{
+	margin-top: 150px;
+	 font-size: 24pt;
+    font-family: 'Lemon Tuesday', sans-serif;
+}
+.white-div{
+	background-image: url(bcg11.jpg);
+	height: 750px;
+}
+.center{
+	background-color: rgb(234, 225, 212);
+    position:absolute;
+    display: flex;
+    margin-left: 6%;
+    margin-top: 5%;
+    width:1190px;
+    height: 614px;
+    box-shadow:  3px 3px 4px gray;
+}
+.picture-div{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.wed{
+	 font-size: 50pt;
+	 margin-left: 190px;
+	 margin-top: 25px;
+    font-family: 'Lemon Tuesday', sans-serif;
+}
+.txt5{
+	margin-left: 210px;
+	margin-top: 80px;
+	width:330px ;
+	height: 290px;
+	 font-size: 20pt;
+    font-family: 'Lemon Tuesday', sans-serif;
+}
+.texti-div{
+	margin-left: 20px;
+}
+.footer{
+    background-color: rgb(206, 190, 170);
+    height: 70px;
+}
+.social-list{
+    display: flex;
+    list-style: none;
+    margin-top:0%;
+    padding-top:1%;
+    position: absolute;
+    left: 33%
+}
+.social-list li{
+    margin-right: 25px;
+     font-family: 'Lemon Tuesday', sans-serif;
+    display: block;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 5px;
+}
+.social-list li:hover, ul li:focus{
+    color:rgb(48, 186, 231);
+}
+/*@media only screen and (max-width: 382px){
+	.nav-list{
+		display: flex;
+		flex-direction: column;
+	}
+}
+*/
+	.login-div{
+		background-image: url(fotooo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+		height: 750px;
+		}
+	.main{
+			background-color: white;
+			opacity: 0.9;
+			border: 1px white solid;
+			max-width: 700px;
+			height: 370px;
+			padding: 20px 20px;
+			margin: 40px auto 40px auto;
+			border-radius: 25px;
+			text-align: center;
+			margin-top:90px;
+		}
+		.loginform{
+			font-family: 'Lemon Tuesday', sans-serif;
+			margin-bottom: 10px;
+		}
+		.email{
+			background-color: rgb(206, 190, 170);
+			border-radius: 25px;
+			border: white solid;
+			width: 500px;
+			height:25px;
+			font-size: 12pt;
+			padding: 10px;
+			font-family: 'Lemon Tuesday', sans-serif;
+		}
+		#password{
+			background-color: rgb(206, 190, 170);
+			border-radius: 25px;
+			border: white solid;
+			width: 500px;
+			height:25px;
+			font-size: 12pt;
+			padding: 10px;
+			font-family: 'Lemon Tuesday', sans-serif;
+
+		}
+			.txta{
+			background-color: rgb(206, 190, 170);
+			border-radius: 25px;
+			border: white solid;
+			width: 500px;
+			font-size: 12pt;
+			padding: 10px;
+			font-family: 'Lemon Tuesday', sans-serif;
+		}
+
+		.btn{
+			background-color: rgb(155, 30, 45);
+			border-radius: 25px;
+			border: white solid;
+			width: 268px;
+			height:45px;
+			font-size: 12pt;
+			padding: 10px;
+			color: white;
+			font-family: 'Lemon Tuesday', sans-serif;
+
+		}
+		.txt6{
+			font-family: 'Lemon Tuesday', sans-serif;
+	text-align: center;
+	padding-top: 90px;
+	font-size: 40pt;
+	color: white;
+		}
+
+.sweets-div{
+	background-image: url("bcg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 625px;
+}
+.texti2-div{
+	margin-top: 5%;
+	margin-left: 12%;
+	color: white;
+}
+.txtt5{
+		margin-left: 210px;
+	margin-top: 80px;
+	width:650px ;
+	height: 290px;
+	 font-size: 20pt;
+    font-family: 'Lemon Tuesday', sans-serif;
+}
+.secondsector2-div{
+	background-color: #835148;
+	height: 1700px;
+}
+.team2-div{
+	margin-top: 5%;
+	margin-left:5%;
+    width: 90%;
+    height: 200px;
+    text-align: center;
+    font-size: 24pt;
+    font-family: 'Lemon Tuesday', sans-serif;
+}
+.about-div{
+	background-image: url("faqja3.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 625px;
+}
+.member-div{
+	background-image: url(picc.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 720px;
+}
+.center2{
+	background-color: #9A6661;
+	opacity: 0.9;
+    position:absolute;
+    display: flex;
+    margin-left: 15%;
+    margin-top: 5%;
+    width:950px;
+    height: 614px;
+    border-radius: 25%;
+}
+.picture1-div{
+	margin-top: 30px;
+	margin-left: 130px;
+}
+.wed2{
+	 font-size: 30pt;
+	text-align: center;
+	 margin-top: 25px;
+	 margin-left: 90px;
+    font-family: 'Lemon Tuesday', sans-serif;
+}
+.txt15{
+	text-align: center;
+	color: black;
+	margin-top: 30px;
+	margin-left: 10%;
+	width:580px ;
+	height: 290px;
+	 font-size: 20pt;
+    font-family: 'Lemon Tuesday', sans-serif;
+}
+.register-div{
+	background-image: url("fotoo.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 685px;
+}
+.login-div{
+		background-image: url(fotooo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+		height: 770px;
+		}
+	.main2{
+			background-color: white;
+			opacity: 0.9;
+			border: 1px white solid;
+			max-width: 530px;
+			height: 450px;
+			padding: 20px 20px;
+			margin: 40px auto 40px auto;
+			border-radius: 25px;
+			text-align: center;
+			margin-top:140px;
+		}
+		.registerform{
+			font-family: 'Lemon Tuesday', sans-serif;
+			margin-bottom: 10px;
+		}
+		.address{
+			background-color: rgb(206, 190, 170);
+			border-radius: 25px;
+			border: white solid;
+			width: 500px;
+			height:25px;
+			font-size: 12pt;
+			padding: 10px;
+			font-family: 'Lemon Tuesday', sans-serif;
+		}
+		.email2{
+			background-color: rgb(206, 190, 170);
+			border-radius: 25px;
+			border: white solid;
+			width: 500px;
+			height:25px;
+			font-size: 12pt;
+			padding: 10px;
+			font-family: 'Lemon Tuesday', sans-serif;
+		}
+		#password2{
+			background-color: rgb(206, 190, 170);
+			border-radius: 25px;
+			border: white solid;
+			width: 500px;
+			height:25px;
+			font-size: 12pt;
+			padding: 10px;
+			font-family: 'Lemon Tuesday', sans-serif;
+
+		}
+		.btnregister{
+			background-color: rgb(155, 30, 45);
+			border-radius: 25px;
+			border: white solid;
+			width: 268px;
+			height:45px;
+			font-size: 12pt;
+			padding: 10px;
+			color: white;
+			font-family: 'Lemon Tuesday', sans-serif;
+}
+		#name{
+			background-color: rgb(206, 190, 170);
+			border-radius: 25px;
+			border: white solid;
+			width: 500px;
+			height:25px;
+			font-size: 12pt;
+			padding: 10px;
+			font-family: 'Lemon Tuesday', sans-serif;
+
+		}
+		#lastname{
+			background-color: rgb(206, 190, 170);
+			border-radius: 25px;
+			border: white solid;
+			width: 500px;
+			height:25px;
+			font-size: 12pt;
+			padding: 10px;
+			font-family: 'Lemon Tuesday', sans-serif;
+		}
+		.reg{
+			font-family: 'Lemon Tuesday', sans-serif;
+			margin-bottom: 10px;
+		}
+	
