@@ -1,30 +1,31 @@
+<?php include 'config.php'?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>Neolor</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css?v=<?=$version?>">
 <link href="http://fonts.cdnfonts.com/css/lemon-tuesday" rel="stylesheet">
                 </head>
 <body>
 <div class="brown-div">
 	<div class="header-div">
 		<div class="logo-div">
-			<a href="index.html"><img src="logo1.png" style="width:210px;height: 120px;"></a>
+			<a href="index.php"><img src="logo1.png" style="width:210px;height: 120px;"></a>
 		</div>
 		<div class="nav-list">
 			<ul>
-				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="sweets.html">Sweets</a></li>
-				<li><a href="contacts.html">Contacts</a></li>
+				<li class="active"><a href="index.php">Home</a></li>
+				<li><a href="about.php">About</a></li>
+				<li><a href="sweets.php">Sweets</a></li>
+				<li><a href="contacts.php">Register</a></li>
 			</ul>
 		</div>
 	</div>
 	<div class="content-div">
 		<div class="txt-btn">
 		<h1 class="txt1" style="color: rgb(205, 179, 146);">Custom Cakes</h1>
-		<button class="btn1"><a href="about.html">Our Story</button>
+		<button class="btn1"><a href="about.php">Our Story</a></button>
 	</div>
 	</div>
 </div>
@@ -34,17 +35,17 @@
 		<div class="teams1-brand">
 			<img src="choco-cake.jpg">
 			<p class="p1">Cakes</p>
-			<a href="sweets.html"><p style="font-size: 15pt;" class="p2">See More</p></a>
+			<a href="sweets.php"><p style="font-size: 15pt;" class="p2">See More</p></a>
 		</div>
 		<div class="teams1-brand">
 			<img src="cupcake.jpg">
 			<p class="p1">Cupcakes</p>
-			<a href="sweets.html"><p style="font-size: 15pt;" class="p2">See More</p></a>
+			<a href="sweets.php"><p style="font-size: 15pt;" class="p2">See More</p></a>
 		</div>
 		<div class="teams1-brand">
 			<img src="cookies.jpg">
 			<p class="p1">Cookies</p>
-			<a href="sweets.html"><p style="font-size: 15pt;" class="p2">See More</p></a>
+			<a href="sweets.php"><p style="font-size: 15pt;" class="p2">See More</p></a>
 		</div>
 			
 		</div>
@@ -60,7 +61,7 @@
 Add that extra flair by ordering our delicious<br> custom
  image cupcakes and cookies!
 			</p>
-			<button class="btn1"><a href="contacts.html">Order Now</a></button>
+			<button class="btn1"><a href="contacts.php">Order Now</a></button>
 		</div>
 	</div>
 	</div>
@@ -75,18 +76,11 @@ Add that extra flair by ordering our delicious<br> custom
 Add that extra flair by ordering our delicious<br> custom
  image cupcakes and cookies!
 			</p>
-			<button class="btn1" style="margin-left: 310px;"><a href="contacts.html">Order Now</a></button>
+			<button class="btn1" style="margin-left: 310px;"><a href="contacts.php">Order Now</a></button>
 		</div>
 </div>
 </div>
 
- <footer class="footer">
-        <ul class="social-list">
-            <li>Instagram</li> 
-            <li>Facebook</li>
-            <li>Twitter</li>
-           <li>Youtube</li>
-        </ul>
-    </footer>
+ <?php include 'footer.php' ?>
 </body>
 </html>

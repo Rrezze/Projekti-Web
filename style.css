@@ -197,7 +197,7 @@ a:visited {
 			opacity: 0.9;
 			border: 1px white solid;
 			max-width: 700px;
-			height: 370px;
+			height: 300px;
 			padding: 20px 20px;
 			margin: 40px auto 40px auto;
 			border-radius: 25px;
@@ -229,16 +229,6 @@ a:visited {
 			font-family: 'Lemon Tuesday', sans-serif;
 
 		}
-			.txta{
-			background-color: rgb(206, 190, 170);
-			border-radius: 25px;
-			border: white solid;
-			width: 500px;
-			font-size: 12pt;
-			padding: 10px;
-			font-family: 'Lemon Tuesday', sans-serif;
-		}
-
 		.btn{
 			background-color: rgb(155, 30, 45);
 			border-radius: 25px;
@@ -308,17 +298,17 @@ a:visited {
 	opacity: 0.9;
     position:absolute;
     display: flex;
-    margin-left: 15%;
+    margin-left: 20%;
     margin-top: 5%;
-    width:950px;
-    height: 614px;
+    width:820px;
+    height: 570px;
     border-radius: 25%;
 }
 .picture1-div{
 	margin-top: 30px;
 	margin-left: 130px;
 }
-.wed2{
+#wed2{
 	 font-size: 30pt;
 	text-align: center;
 	 margin-top: 25px;
@@ -328,8 +318,8 @@ a:visited {
 .txt15{
 	text-align: center;
 	color: black;
-	margin-top: 30px;
-	margin-left: 10%;
+	margin-top: 70px;
+	margin-left: -2%;
 	width:580px ;
 	height: 290px;
 	 font-size: 20pt;
@@ -430,4 +420,3 @@ a:visited {
 			font-family: 'Lemon Tuesday', sans-serif;
 			margin-bottom: 10px;
 		}
-	

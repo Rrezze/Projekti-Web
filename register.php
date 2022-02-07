@@ -1,23 +1,24 @@
+<?php include 'config.php' ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Contacts</title>
-       <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Register</title>
+       <link rel="stylesheet" type="text/css" href="style.css?v=<?=$version?>">
 <link href="http://fonts.cdnfonts.com/css/lemon-tuesday" rel="stylesheet">
     </head>
     <body>
         <div class="register-div">
     <div class="header-div">
         <div class="logo-div">
-            <a href="index.html"><img src="logo1.png" style="width:210px;height: 120px;"></a>
+            <a href="index.php"><img src="logo1.png" style="width:210px;height: 120px;"></a>
         </div>
         <div class="nav-list">
             <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="sweets.html">Sweets</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li class="active"><a href="index.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="sweets.php">Sweets</a></li>
+                <li><a href="contacts.php">Register</a></li>
             </ul>
         </div>
 </div>
@@ -41,21 +42,14 @@
     <form>
     <input class="email" type="email" name="email" placeholder="Enter email" required><br><br>
     <input id="password" type="password" placeholder="Enter password" required><br><br>
-    <textarea class="txta" name="txta" rows="4" cols="30" placeholder="Message" required></textarea>
     <button class="btn" onclick="return regex2()">Log In</button>
 </form>
 </div>
 </div>
     </body>
-    <footer class="footer">
-        <ul class="social-list">
-            <li>Instagram</li> 
-            <li>Facebook</li>
-            <li>Twitter</li>
-           <li>Youtube</li>
-        </ul>
-    </footer>
+    <?php include 'footer.php' ?>
     <script type="text/javascript">
+        
 function regex(){
 
     var nameinput = document.getElementById('name').value;
