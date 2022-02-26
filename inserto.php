@@ -17,10 +17,9 @@
             $query = $this->db->pdo->prepare('INSERT INTO users(firstname,lastname,email,addres,upassword,roli) values (:firstname, :lastname,:email, :addres,:passwordi, 0)');
             $query->bindParam(':firstname',$request['firstname']);
             $query->bindParam(':lastname',$request['lastname']);
-            $query->bindParam(':email',$request['email']);
-            $query->bindParam(':upassword',$request['passwordi']);
             $query->bindParam(':addres',$request['addres']);
-            
+            $query->bindParam(':email',$request['email']);
+            $query->bindParam(':passwordi',$request['passwordi']);
 
             $query->execute();
 
