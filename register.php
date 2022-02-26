@@ -1,4 +1,12 @@
-<?php include 'config.php' ?>
+<?php include 'config.php';
+ ?>
+<?php
+require_once 'inserto.php';
+$users = new Inserto;
+if(isset($_POST['submit'])){
+    $users->insert($_POST);
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,20 +26,34 @@
                 <li class="active"><a href="index.php">Home</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="sweets.php">Sweets</a></li>
-                <li><a href="contacts.php">Register</a></li>
+                <li><a href="register.php">Register</a></li>
+                <?php 
+        if(isset($_SESSION['roli']) && $_SESSION['roli'] == 1){
+        ?>
+        <li><a href="dashboard.php">Dashboard</a></li>
+        <?php
+        }
+        ?>
+        	<?php
+		 if(isset($_SESSION['aktiv']) && $_SESSION['aktiv']==true){
+    ?>
+        <li><a href="logout.php">Log out</a></li>
+    <?php
+    }
+    ?>
             </ul>
         </div>
 </div>
 <div class="main2">
     <h1 class="registerform">Register Form</h1>
     <p class="reg">If you aren't already registered</p>
-    <form>
-        <input id="name" type="text" placeholder="Enter Firstname" required><br><br>
-         <input id="lastname" type="text" placeholder="Enter Lastname" required><br><br>
-         <input class="address" type="text" placeholder="Enter address" required><br><br>
-    <input class="email2" type="email" placeholder="Enter email"><br><br>
-    <input id="password2" type="password" placeholder="Enter password" required><br><br>
-    <button class="btnregister" onclick="return regex()">Submit</button>
+    <form method = "POST"   >
+        <input id="name" type="text" placeholder="Enter Firstname" name = "firstname" required><br><br>
+         <input id="lastname" type="text" placeholder="Enter Lastname" name = "lastname" required><br><br>
+         <input class="addres" type="text" placeholder="Enter address" name = "addres" required><br><br>
+    <input class="email2" type="email" name = "email" placeholder="Enter email"><br><br>
+    <input id="password2" name = "passwordi" type="password" placeholder="Enter password" required><br><br>
+    <button class="btnregister" name="submit" onclick="return regex()">Submit</button>
 </form>
 </div>
     </div>
@@ -39,10 +61,10 @@
     <p class="txt6">If you are already registered:</p>
 <div class="main">
     <h1 class="loginform">Login Form</h1>
-    <form>
-    <input class="email" type="email" name="email" placeholder="Enter email" required><br><br>
-    <input id="password" type="password" placeholder="Enter password" required><br><br>
-    <button class="btn" onclick="return regex2()">Log In</button>
+    <form action="loginValidation.php" method="POST">
+    <input class="email" type="email" name="emaill" placeholder="Enter email" required><br><br>
+    <input id="password" name="passi" type="password" placeholder="Enter password" required><br><br>
+    <button class="btn" name="btn" onclick="return regex2()">Log In</button>
 </form>
 </div>
 </div>

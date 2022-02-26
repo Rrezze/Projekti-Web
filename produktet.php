@@ -1,10 +1,12 @@
 <?php
     class Produktet{
+        public $produktetId;
         public $fotoProduktit;
         public $emriProduktit;
         public $qmimiProduktit;
 
-        public function __construct($fotoProduktit,$emriProduktit,$qmimiProduktit){
+        public function __construct($produktetId,$fotoProduktit,$emriProduktit,$qmimiProduktit){
+            $this->produktetId=$produktetId;
             $this->fotoProduktit=$fotoProduktit;
             $this->emriProduktit=$emriProduktit;
             $this->qmimiProduktit=$qmimiProduktit;

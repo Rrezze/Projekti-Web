@@ -1,4 +1,7 @@
-<?php include 'config.php' ?>
+<?php include 'config.php'; ?>
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +21,21 @@
 				<li class="active"><a href="index.php">Home</a></li>
 				<li><a href="about.php">About</a></li>
 				<li><a href="sweets.php">Sweets</a></li>
-				<li><a href="contacts.php">Register</a></li>
+				<li><a href="register.php">Register</a></li>
+				<?php 
+        if(isset($_SESSION['roli']) && $_SESSION['roli'] == 1){
+        ?>
+        <li><a href="dashboard.php">Dashboard</a></li>
+        <?php
+        }
+        ?>
+		<?php
+		 if(isset($_SESSION['aktiv']) && $_SESSION['aktiv']==true){
+    ?>
+        <li><a href="logout.php">Log out</a></li>
+    <?php
+    }
+    ?>
 			</ul>
 		</div>
 		<div class="texti2-div">
