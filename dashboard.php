@@ -114,7 +114,14 @@ padding: 12px 15px;
                 <li><a href="about.php">About</a></li>
                 <li><a href="sweets.php">Sweets</a></li>
                 <li><a href="register.php">Register</a></li>
-                <li><a href="dashboard.php">Dashboard</a></li>
+               
+                <?php
+                 if(isset($_SESSION['roli']) && $_SESSION['roli'] == 1){
+        ?>
+        <li><a href="dashboard.php">Dashboard</a></li>
+        <?php
+        }
+        ?>
                 <?php
 		 if(isset($_SESSION['aktiv']) && $_SESSION['aktiv']==true){
     ?>
